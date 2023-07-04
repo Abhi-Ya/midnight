@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>KVIS Tanabata 2023</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class = "background">
+            <div class="title">
+                <h1>Tanabata 2023 @KVIS</h1>
+                <h2> 七夕 </h2>
+                <p>May all your wishes come true</p>
+            </div> 
+            <div>
+                <div style="margin: 15px; margin-bottom: 50px;">
+                    <button onclick="openPopup()">Start your story</button>
+                    <div class="overlay" id="overlay"></div>
+                    <div class="popup" id="popup">
+                        <p>Tanabata (七夕, meaning "Evening of the seventh”), also known as Star Festival, is a Japanese festival to
+                            celebrates the meeting of the deities Orihime and Hikoboshi.</p>
+                        <button onclick="closePopup()">close</button>
+                    </div>
+                </div>
+                <div style="margin: 15px; margin-bottom: 50px;">
+                    <button onclick="openPopup()">Make a wish for tanabata</button>
+                    <div class="overlay" id="overlay"></div>
+                    <div class="popup" id="popup">
+                        <div class="makewish">
+                            <form action="" id="form">
+                                <h2>Make a wish</h2>
+                                <div>
+                                    <input type="text" id="name" placeholder="Your name">
+                                </div>
+                                <div>
+                                    <input type="text" id="wish" placeholder="Your wish">
+                                </div>
+                                <div class="tanzaku">
+                                    <p style="margin-top: 0; margin-bottom: 10px; padding-top: 10px; padding-left: 10px;">Choose your tanzaku
+                                        color</p>
+                                    <div style="padding-left: 10px; padding-bottom: 10px;">
+                                        <input type="radio" id="tzk-red" name="color">
+                                        <label for="tzk-red" id="red">Red</label><br>
+                                        <input type="radio" id="tzk-blue" name="color">
+                                        <label for="tzk-blue" id="blue">Blue</label><br>
+                                        <input type="radio" id="tzk-yellow" name="color">
+                                        <label for="tzk-yellow" id="yellow">Yellow</label><br>
+                                        <input type="radio" id="tzk-white" name="color">
+                                        <label for="tzk-white" id="white">White</label><br>
+                                        <input type="radio" id="tzk-purple" name="color">
+                                        <label for="tzk-purple" id="purple">Purple</label><br>
+                                    </div>
+                        
+                                </div>
+                                <button type="submit">Submit</button>
+                            </form>
+                        </div>
+                        <button onclick="closePopup()">close</button> <!-- will be merge to the submit botton-->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
